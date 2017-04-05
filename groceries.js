@@ -19,5 +19,19 @@ function getCookie(cname) {
             return c.substring(name.length, c.length);
         }
     }
-    return "";
+
+    function additem()
+    {
+      var input = (" ");
+
+      var list =  document.getElementById("listDisplay");
+
+      var item = document.createElement("li");
+
+      var itemName = document.createTextNode(input);
+      item.appendChild(itemName);
+      list.appendChild(item);
+
+    }
+      return "";
 }
